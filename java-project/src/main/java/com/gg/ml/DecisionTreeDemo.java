@@ -4,7 +4,7 @@ package com.gg.ml;
 
 import java.io.File;
 import java.io.IOException;
-
+import weka.classifiers.trees.Id3;
 import weka.classifiers.Classifier;
 import weka.classifiers.Evaluation;
 import weka.classifiers.trees.J48;
@@ -19,7 +19,7 @@ public class DecisionTreeDemo {
 
 	/** file names are defined*/
 	public static final String TRAINING_DATA_SET_FILENAME="decision-train.arff";
-	public static final String TESTING_DATA_SET_FILENAME="decision-train.arff";
+	public static final String TESTING_DATA_SET_FILENAME="decision-test.arff";
 	
 
 	/**
@@ -36,12 +36,12 @@ public class DecisionTreeDemo {
 		/** the arffloader to load the arff file */
 		ArffLoader loader = new ArffLoader();
 		/** load the traing data */
-		//loader.setSource(LinearRegressionDemo.class.getResourceAsStream("/" + fileName));
+		loader.setSource(LinearRegressionDemo.class.getResourceAsStream("/" + fileName));
 		/**
 		 * we can also set the file like loader3.setFile(new
 		 * File("test-confused.arff"));
 		 */
-		loader.setFile(new File(fileName));
+		//loader.setFile(new File(fileName));
 		Instances dataSet = loader.getDataSet();
 		/** set the index based on the data given in the arff files */
 		dataSet.setClassIndex(classIdx);
