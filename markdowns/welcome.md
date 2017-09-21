@@ -39,6 +39,26 @@ It is used when the response variable is continuous or numerical in nature.This 
 
 3. Helpful in data exploration as they implicitly perform the feature selection and which is very helful in predictive analysis.
 
+# Overfitting 
+
+It is the practical problem while building the decision tree model. The module is having an issue of overfitting when the algorithm continues to go deeper and deeper to reduce the training set error with an increased test set error.(Accuracy of prediction goes down)
+
+It mainly happens because of construction of many branches due to irregularities in data.The overfitting can be avoided by using 2 approches. They are
+
+1. Pre-Pruning
+2. Post-Pruning
+
+# Pre-Pruning
+
+It stop the tree constructions bit early.
+It is preffered not to split the node if its goodness measure is below a threshold value
+
+# Post-Pruning
+
+It goes deeper and deeper in the tree to build a complete tree
+If the tree shows the overfitting problem then pruning is done as a post-pruning step. We use a cross-validation data to check the effect of our pruning. Using cross-validation data, it tests whether expanding a node will make an improvement or not.
+If it shows an improvement, then we can continue by expanding that node. But if it shows a reduction in accuracy then it should not be expanded i.e, the node should be converted to a leaf node.
+
 # Decision Tree Demo
 
 @[Id3 and J48 Classifier in Decision Tree]({"stubs": ["src/main/java/com/gg/ml/DecisionTreeDemo.java"], "command": "com.gg.ml.DecisionTreeDemoTest#test"})
