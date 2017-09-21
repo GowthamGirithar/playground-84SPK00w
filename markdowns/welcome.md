@@ -7,13 +7,37 @@ Decision Trees are a classic supervised learning algorithms.
 A decision tree is a decision support tool that uses a tree-like graph or model of decisions and their possible consequences, including chance-event outcomes, resource costs, and utility. The decision tree algorithm can be used for solving the regression and classification problems too. 
 The main goal of decision tree is to achieve perfect classification with minimum number of decision and it is not always possible due to inconsistencies of data.
 
-# Decision Tree Algorithm
+# Sample Example
 
-The Pesudocode for the decision tree algorithm is below,
+Let us consider you are planning to go out for dining as your friends are visiting but you are hesitant in making a decision on which restaurant to choose.Whenever you wants to go out for dining you ask Boby if he thinks you will like that place or not.You give him a list of restaurants that you have visited and tell him whether you liked each restaurant or not (giving a labelled training dataset).Boby ask you few questions like, whether you like rooft top seating ? , Does restaurant serve Indian food ?, Is restaurant open till midnight ? Does restaurant have live music and so on to answer your question.It asks you serveral informative questions to give the resply whether you will like that restaurant or not.In this Boby is a decision tree for finding your restaurant preferences.
 
-1. Select the best attribute of the dataset as a root of the tree.
-2. 
+# Types of Decision Trees
 
+1. Classification Trees
+2. Regression Trees
+
+# Classification trees
+
+It is the default kind of decision tree used to seperate the dataset into different classes.
+The response variable is categorial in nature.(2 categories or multiple categories)
+
+# Regression Trees
+
+It is used when the response variable is continuous or numerical in nature.This is again classified into linear relationship and non linear relationship between the predictors and response.
+
+# When to use Decision Trees?
+
+1. The decision trees are suited if the training data contains error.Because they are robust to errors.
+
+2. It is used when the training data has missing values.Becuase they can handle missing values by looking the data into other columns.
+
+# Adavantages
+
+1. Easy to explain.
+
+2. Data type is not constraint as they can handle both categorial and numerical values.
+
+3. Helpful in data exploration as they implicitly perform the feature selection and which is very helful in predictive analysis.
 
 # Decision Tree Demo
 
@@ -22,4 +46,14 @@ The Pesudocode for the decision tree algorithm is below,
 
 # Code Explanation
 
-# Challenges with Nearest Neighbor model 
+In the above code, we have used both the Id3 and J48 algorithms.The J48 model is more accurate in the quality in the process, based in C4.5 is an extension of ID3 that accounts for unavailable values, continuous attribute value ranges, pruning of decision trees, rule derivation, and so on.The ID3 could be implemented when you need more faster/simpler result without taking into account all those additional factors in the J48 consider.J48 handles missing values, has more robust splitting and has routines for pruning the tree structure. In short it is an industrial strength decision tree learner.
+
+# Real Time applications using Decision Tree
+
+1. Great use in finance for option pricing
+2. Pattern recogonization based on decision trees
+3. Bank to classify the loan applicants
+4. Gerber Products, a popular baby product company, used decision tree machine learning algorithm to decide whether they should continue using the plastic PVC (Poly Vinyl Chloride) in their products.
+5. Rush University Medical Centre has developed a tool named Guardian that uses a decision tree machine learning algorithm to identify at-risk patients and disease trends.
+
+# 
