@@ -4,12 +4,14 @@ In my previous articles, we have seen the Linear Regression, Logistic Regression
 
 # Decision Tree
 Decision Trees are a classic supervised learning algorithms. 
+
 A decision tree is a decision support tool that uses a tree-like graph or model of decisions and their possible consequences, including chance-event outcomes, resource costs, and utility. The decision tree algorithm can be used for solving the regression and classification problems too. 
+
 The main goal of decision tree is to achieve perfect classification with minimum number of decision and it is not always possible due to inconsistencies of data.
 
 # Sample Example
 
-Let us consider you are planning to go out for dining as your friends are visiting but you are hesitant in deciding on which restaurant to choose. Whenever you want to go out for dining you ask Bobby if he thinks you will like that place or not. You give him a list of restaurants that you have visited and tell him whether you liked each restaurant or not (giving a labelled training dataset). Bobby, ask you few questions like, whether you like roof top seating? Does restaurant serve Indian food ?, Is restaurant open till midnight ? Does restaurant have live music and so on to answer your question. It asks you several informative questions to give the reply whether you will like that restaurant or not. In this Bobby is a decision tree for finding your restaurant preferences.
+Let us consider you are planning to go out for dining , as your friends are visiting but you are hesitant in deciding on which restaurant to choose. Whenever you want to go out for dining you ask Bobby if he thinks you will like that place or not. You give him a list of restaurants that you have visited and tell him whether you liked each restaurant or not (giving a labelled training dataset). Bobby, ask you few questions like, whether you like roof top seating? Does restaurant serve Indian food ?, Is restaurant open till midnight ? Does restaurant have live music and so on to answer your question. It asks you several informative questions to give the reply whether you will like that restaurant or not. In this Bobby is a decision tree for finding your restaurant preferences.
 
 # Types of Decision Trees
 
@@ -27,11 +29,15 @@ It is used when the response variable is continuous or numerical in nature. This
 
 # When to use Decision Trees?
 
+The few scenarious where we can use decision tree algorithm are,
+
 1. The decision trees are suited if the training data contains error. Because they are robust to errors.
 
 2. It is used when the training data has missing values. Because they can handle missing values by looking the data into other columns.
 
 # Advantages
+
+The few advantages of decision trees are,
 
 1. Easy to explain.
 
@@ -51,13 +57,13 @@ It mainly happens because of construction of many branches due to irregularities
 # Pre-Pruning
 
 It stops the tree constructions bit early.
-It is preferred not to split the node if its goodness measure is below a threshold value
+It is preferred not to split the node ,if its goodness measure is below a threshold value
 
 # Post-Pruning
 
-It goes deeper and deeper in the tree to build a complete tree
-If the tree shows the overfitting problem, then pruning is done as a post-pruning step. We use a cross-validation data to check the effect of our pruning. Using cross-validation data, it tests whether expanding a node will make an improvement or not.
-If it shows an improvement, then we can continue by expanding that node. But if it shows a reduction in accuracy then it should not be expanded i.e., the node should be converted to a leaf node.
+It goes deeper and deeper in the tree to build a complete tree.
+
+When tree shows the overfitting problem, then the pruning is done as a post-pruning step.We use a cross-validation data to check the effect of our pruning. Using cross-validation data, it tests whether expanding a node will make an improvement or not.Incase if it shows an improvement, then we can continue expanding the node.Otherwise it should not be expanded.
 
 # Decision Tree Demo
 
@@ -66,9 +72,11 @@ If it shows an improvement, then we can continue by expanding that node. But if 
 
 # Code Explanation
 
-In the above code, we have used both the Id3 and J48 algorithms. The J48 model is more accurate in the quality in the process, based in C4.5 is an extension of ID3 that accounts for unavailable values, continuous attribute value ranges, pruning of decision trees, rule derivation, and so on. The ID3 could be implemented when you need faster/simpler result without considering all those additional factors in the J48 consider. J48 handles missing values, has more robust splitting and has routines for pruning the tree structure. In short it is an industrial strength decision tree learner.
+In the above code, we have used both the Id3 and J48 algorithms. The ID3 could be implemented when we need faster/simpler result without considering all those additional factors in the J48 consider. J48 handles missing values, has more robust splitting and has routines for pruning the tree structure. In short it is an industrial strength decision tree learner.
 
 # Real Time applications using Decision Tree
+
+The few real time applications are,
 
 1. Great use in finance for option pricing
 2. Pattern recognition based on decision trees
