@@ -29,7 +29,7 @@ Example: We have two variables age and weight .Based on this we are going to det
 
 It is used when the response variable is continuous or numerical in nature. This is again classified into linear relationship and nonlinear relationship between the predictors and response.
 
-Example:Prdicted price of a consumer good.
+Example:Predicted price of a consumer good.
 
 # When to use Decision Trees?
 
