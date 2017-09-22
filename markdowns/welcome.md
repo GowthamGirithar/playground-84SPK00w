@@ -1,6 +1,6 @@
 # Machine Learning with Java - Part 4 (Decision tree)
 
-In my previous articles, we have seen the Linear Regression, Logistic Regression and Nearest Neighbor. This article focuses on Decision Tree Classification and its sample use case.
+In my previous articles, we have seen the  [Linear Regression](https://tech.io/playgrounds/3771/machine-learning-with-java---part-1-linear-regression) , [Logistic Regression](https://tech.io/playgrounds/34a7ecd0a4487577f516d92548af66891284/machine-learning-with-java---part-2-logistic-regression) and [Nearest Neighbor](https://tech.io/playgrounds/5439/machine-learning-with-java---part-3-k-nearest-neighbor). This article focuses on Decision Tree Classification and its sample use case.
 
 # Decision Tree
 Decision Trees are a classic supervised learning algorithms. 
