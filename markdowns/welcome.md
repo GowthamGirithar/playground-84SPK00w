@@ -23,9 +23,13 @@ Let us consider you are planning to go out for dining , as your friends are visi
 It is the default kind of decision tree used to separate the dataset into different classes.
 The response variable is categorical in nature. (2 categories or multiple categories)
 
+Example: We have two variables age and weight .Based on this we are going to determine whether the person will join jym or not.
+
 # Regression Trees
 
 It is used when the response variable is continuous or numerical in nature. This is again classified into linear relationship and nonlinear relationship between the predictors and response.
+
+Example:Prdicted price of a consumer good.
 
 # When to use Decision Trees?
 
@@ -81,7 +85,9 @@ The few real time applications are,
 1. Great use in finance for option pricing
 2. Pattern recognition based on decision trees
 3. Bank to classify the loan applicants
-4. A popular baby product company, used decision tree machine learning algorithm to decide whether they should continue using the plastic PVC (Poly Vinyl Chloride) in their products.
+4. A popular baby product company, used decision tree machine learning algorithm to decide whether they should continue using the plastic PVC in their products.
 5. To identify at-risk patients and disease trends.
+6. To select the category of question paper based on expert level
+7. To take a decision on accepting or rejecting the employment offer
 
 
